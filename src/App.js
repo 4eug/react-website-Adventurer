@@ -3,9 +3,9 @@ import Navbar from './components/Navbar';
 import './App.css';
 import Home from './components/pages/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Services from './components/pages/Services';
 import Projects from './components/pages/Projects';
 import ContactUs from './components/pages/ContactUs';
+import Images from './components/pages/Images';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Navbar />
         <Switch>
           <Route path='/' exact component={Home} />
-          <Route path='/services' component={Services} />
+          <Route path='/images' component={Images} />
           <Route path='/projects' component={Projects} />
           <Route path='/contact-us' component={ContactUs} />
         </Switch>
